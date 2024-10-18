@@ -9,12 +9,25 @@ To write a program to predict the marks scored by a student using the simple lin
 
 ## Algorithm
 ```
-1.Import the standard Libraries.
-2.Set variables for assigning dataset values.
-3.Import linear regression from sklearn.
-4.Assign the points for representing in the graph.
-5.Predict the regression for marks by using the representation of the graph.
-6.Compare the graphs and hence we obtained the linear regression for the given datas.
+1. **Import Libraries**: Import required libraries: `numpy`, `matplotlib`, `pandas`, and necessary modules from `sklearn`.
+
+2. **Load Dataset**: Load the `student_scores.csv` dataset into a DataFrame using `pandas`.
+
+3. **Extract Features and Labels**: Split the dataset into input features (`X`, representing hours studied) and the output labels (`Y`, representing scores obtained).
+
+4. **Split Data into Training and Testing Sets**: Use `train_test_split()` to split the data into training and testing sets. The test size is set to 1/3 of the dataset, and a random state ensures reproducibility.
+
+5. **Initialize Linear Regression Model**: Create an instance of the `LinearRegression` class.
+
+6. **Train the Model**: Fit the linear regression model using the training data (`X_train` and `y_train`).
+
+7. **Make Predictions**: Predict the scores (`Y_pred`) using the test data (`X_test`).
+
+8. **Compare Predictions with Actuals**: View the predicted scores (`Y_pred`) and compare them with the actual test scores (`y_test`).
+
+9. **Visualize Training Set Results**: Plot a scatter plot of the training set data points (hours vs scores) and the regression line based on the predicted values.
+
+10. **Label the Plot**: Add title, x-axis (hours), and y-axis (scores) labels to the plot. Then, display the plot.
 ```
 ## Program:
 ```
