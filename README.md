@@ -8,7 +8,7 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-```
+
 1. **Import Libraries**: Import required libraries: `numpy`, `matplotlib`, `pandas`, and necessary modules from `sklearn`.
 
 2. **Load Dataset**: Load the `student_scores.csv` dataset into a DataFrame using `pandas`.
@@ -28,7 +28,7 @@ To write a program to predict the marks scored by a student using the simple lin
 9. **Visualize Training Set Results**: Plot a scatter plot of the training set data points (hours vs scores) and the regression line based on the predicted values.
 
 10. **Label the Plot**: Add title, x-axis (hours), and y-axis (scores) labels to the plot. Then, display the plot.
-```
+
 ## Program:
 ```
 /*
