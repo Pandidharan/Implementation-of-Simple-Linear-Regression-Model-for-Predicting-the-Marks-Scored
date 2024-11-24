@@ -69,10 +69,10 @@ plt.show()
 ```
 
 ## Output:
+
+![Screenshot 2024-11-24 194054](https://github.com/user-attachments/assets/88e48298-14e6-4527-8a8f-ab32b9d8aed8)
+
 ![image](https://github.com/user-attachments/assets/5b03b091-4ba6-49c6-a30d-a223906e3347)
-
-![Uploading image.png…]()
-
 
 
 
