@@ -45,9 +45,9 @@ from sklearn.metrics import mean_squared_error,mean_absolute_error
 
 df = pd.read_csv('student_scores.csv')
 X = df.iloc[:,:-1].values
-X
+print("X:",X)
 Y = df.iloc[:,1].values
-Y
+print("Y:",Y)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=1/3, random_state=0)
 
@@ -56,8 +56,8 @@ regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 Y_pred = regressor.predict(X_test)
 
-Y_pred
-y_test
+print("Y-pred:",Y_pred)
+print("y-test:",y_test)
 
 plt.scatter(X_train, y_train, color='red')
 plt.plot(X_train, regressor.predict(X_train), color='blue')
@@ -65,15 +65,15 @@ plt.title('Hours vs Scores(Training Set)')
 plt.xlabel('Hours')
 plt.ylabel('Scores')
 plt.show()
+
 ```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/5b03b091-4ba6-49c6-a30d-a223906e3347)
 
-![Screenshot 2024-08-30 103523](https://github.com/user-attachments/assets/05e2d879-3f57-4509-9e3e-0ca4231a65db)
-![Screenshot 2024-08-30 103515](https://github.com/user-attachments/assets/d32436bd-1460-4260-8bd6-f4f38705defa)
-![Screenshot 2024-08-30 103503](https://github.com/user-attachments/assets/6be4ee7c-caf5-48ac-bab0-46bc42bb4f3c)
-![Screenshot 2024-08-30 103549](https://github.com/user-attachments/assets/65dd45b6-d662-44ab-9cc5-0263e0309f21)
-![Screenshot 2024-08-30 140517](https://github.com/user-attachments/assets/3fb956f4-7ffc-4dae-8663-ab4d3d8204d5)
+![Uploading image.png…]()
+
+
 
 
 
